@@ -67,7 +67,7 @@ background-color: #550101;
 }
 #contenidoCuerpo{
     padding-top: 50px;
-    width: 100%;
+    
     background-color: #D3EE9F;
     display: flex;
 }
@@ -81,7 +81,7 @@ background-color: #550101;
     background-color: #d46b68;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    
     border-radius: 20px;
 }
 img{
@@ -92,4 +92,33 @@ h1{
     font-weight: bold;
     padding-bottom: 20px;
     text-transform: uppercase;
+}
+#detalleDatos{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+#Botones{
+    display: flex;
+    margin-top: 20px;
+}
+#BotonFavorito{
+    flex: 50%;
+}
+#botonUbicacion{
+    flex: 50%;
+}
+#marcofavorito{
+    background-color: #cccccc;
+    width: 250px;
+    background-image: url(../img/Recurso\ 13.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    padding: 25px 0px 25px 55px;
+    background-position:left 20px center;
+    border-radius: 10px;
+}
+#marcofavorito:hover{
+    opacity: 70%;
+    cursor: pointer;
 }
