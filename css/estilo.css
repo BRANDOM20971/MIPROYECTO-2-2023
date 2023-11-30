@@ -11,8 +11,8 @@ padding: 0;
 footer{
     width: 100%; 
     background-color: #7b9e35;
-    display: flex;
-    padding: 30px;
+    position: absolute;
+    bottom: 0;
 }
 #cabeceraImagenNombre{
     flex: 30%;
@@ -68,8 +68,8 @@ background-color: #550101;
    background-repeat: no-repeat;
 }
 #contenidoCuerpo{
+    height: 650px;
     padding-top: 50px;
-    
     background-color: #D3EE9F;
     display: flex;
 }
@@ -78,6 +78,7 @@ background-color: #550101;
 }
 #cuerpoDatos{
     flex: 60%;
+    padding-left: 50px;
 } 
 #bordeImagen{
     background-color: #d46b68;
@@ -96,14 +97,14 @@ h1{
     text-transform: uppercase;
 }
 #detalleDatos{
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 20px;
 }
 #Botones{
     display: flex;
     margin-top: 20px;
-    padding: 30px;
+    padding-left: 150px;
 }
 #BotonFavorito{
     flex: 50%;
@@ -137,10 +138,18 @@ ul li:last-child{
     flex: 15%;
 }
 #marcoDetallefooter{
+    position: relative;
     flex: 35%;
+    text-align: center;
+    animation: move 5s infinite;
+}
+@keyframes move{
+    from{top: 0;}
+    to{top: 40px;}
 }
 #marcoRedesfooter{
     flex: 40%;
+    text-align: right;
 }
 .footerRedes{
     display: inline;
@@ -150,4 +159,23 @@ li img{
 }
 .footerRedes li{
     border: none;
+}
+#footerMenu{
+    display: flex;
+padding: 30px;
+}
+nav a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px 10px 0;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #550101;
+    font-size: 17px;
+}
+li img:hover{
+    opacity: 60%;
+    width: 4%;
 }
